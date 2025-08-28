@@ -10,7 +10,7 @@ A simple command-line “secret auction” app. Multiple bidders can enter their
 
 ## How It Works
 
-The program loops, collecting name/bid pairs into a dictionary. After each entry it “clears” the screen by printing blank lines so the next bidder can’t see previous inputs. When the user indicates there are no more bidders, the `find_highest_bider` function scans the dictionary to find the maximum bid and announces the winner.
+The program loops, collecting name/bid pairs into a dictionary. After each entry it clears the screen using os.system("cls") on Windows or os.system("clear") on macOS/Linux, so the next bidder can’t see previous inputs. When the user indicates there are no more bidders, the `find_highest_bider` function scans the dictionary to find the maximum bid and announces the winner.
 
 Key steps:
 
